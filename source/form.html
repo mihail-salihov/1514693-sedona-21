@@ -17,7 +17,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -27,7 +27,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">
+            <a>
               Форма отзыва
             </a>
           </li>
@@ -50,10 +50,7 @@
     <section class="presentation">
       <div class="presentation__wrapper">
         <header class="presentation__header">
-          <h3 class="headline">Оставьте свой отзыв</h3>
-          <h2 class="visually-hidden">
-            Презентация города Седона
-          </h2>
+          <h2 class="headline">Оставьте свой отзыв</h2>
           <p class="presentation__introduction">
             Помогите нашим отелям стать лучше!<br>
             Оставьте отзыв о них, а также о<br>
@@ -73,27 +70,27 @@
             <h3 class="form-review__title">Представьтесь</h3>
             <ul class="form-review__guest__name">
               <li class="form-review__field__name  form-review__first__name">
-                <label class="form-review__label" for="guest-name">Имя</label>
+                <label class="form-review__label" for="guest-name">Имя*:</label>
                 <input type="text" id="guest-name" name="name-1" value="Петр" required>
               </li>
               <li class="form-review__field__name form-review__last__name">
-                <label class="form-review__label" for="guest-last-name">Фамилия</label>
+                <label class="form-review__label" for="guest-last-name">Фамилия*:</label>
                 <input type="text" id="guest-last-name" name="name-2" value="Иванов" required>
               </li>
               <li class="form-review__field__name form-review__patronymic__name">
                 <label class="form-review__label" for="guest-patronymic">Отчество</label>
-                <input type="text" id="guest-patronymic" name="name-3" value="Александрович" required>
+                <input type="text" id="guest-patronymic" name="name-3" value="Александрович">
               </li>
             </ul>
             <!-- Телефон и Емейл -->
             <h3 class="form-review__title">Контактная информация</h3>
             <ul class="form-review__contacts">
               <li class="form-review__field__contacts  form-review__guest__phone">
-                <label class="form-review__label" for="user-phone">Контактный телефон</label>
+                <label class="form-review__label" for="user-phone">Контактный телефон*:</label>
                 <input type="tel" name="tel" id="user-phone" pattern="" value="Введите телефон" required>
               </li>
               <li class="form-review__field__contacts  form-review__guest__mail">
-                <label class="form-review__label" for="user-mail">Электронная почта</label>
+                <label class="form-review__label" for="user-mail">Электронная почта*:</label>
                 <input type="email" name="e-mail" id="user-mail" value="Введите e-mail" required>
               </li>
             </ul>
@@ -114,31 +111,10 @@
               </li>
             </ul>
 
-            <!-- Popup -->
-            <div class="form-review__popup">
-              <h3 class="form-review__error">Что-то пошло не так!</h3>
-              <p>Проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить</p>
-              <!-- Кнопка Ok -->
-              <div class="form-review__button">
-                <h3 class="form-review__agreement">Ок</h3>
-              </div>
-            </div>
-
-            <!-- Popup -->
-            <div class="form-review__popup">
-              <h3 class="form-review__popup__success">Ваш отзыв отправлен</h3>
-              <p>Спасибо за ваше участие, ваш<br>отзыв уже поступил к нам.<br>В ближайшее время мы<br>опубликуем его на сайте.</p>
-            </div>
-
-            <!-- Кнопка Закрыть окно -->
-            <div class="form-review__button">
-              <h3 class="form-review__close">Закрыть окно</h3>
-            </div>
-
             <!-- Кнопка Отправить отзыв -->
             <div class="form-review__button">
-              <input type="submit" id="button-submit">
-              <h3><label class="form-review__send" for="button-submit">Отправить отзыв</label></h3>
+              <button type="submit" id="button-submit"></button>
+              <label class="form-review__send" for="button-submit">Отправить отзыв</label>
             </div>
 
           </fieldset>
@@ -165,6 +141,26 @@
       </div>
     </div>
   </footer>
+
+<section class="popup">
+    <!-- Popup -->
+  <div class="popup__block">
+    <h3 class="popup__block__error">Что-то пошло не так!</h3>
+    <p>Проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить</p>
+    <!-- Кнопка Ok -->
+    <div class="popup__button">
+      <button type="button" class="popup__button__agreement">Ок</button>
+    </div>
+  </div>
+
+   <!-- Popup -->
+  <div class="popup__block">
+    <h3 class="popup__block__success">Ваш отзыв отправлен</h3>
+    <p>Спасибо за ваше участие, ваш<br>отзыв уже поступил к нам.<br>В ближайшее время мы<br>опубликуем его на сайте.</p>
+  </div>
+</section>
+
+
 </body>
 
 </html>
