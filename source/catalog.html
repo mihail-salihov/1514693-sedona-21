@@ -22,7 +22,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">
+            <a>
               Фото и видео
             </a>
           </li>
@@ -46,7 +46,6 @@
     </div>
   </header>
 
-
   <main class="page-main">
     <section class="presentation">
       <div class="presentation__wrapper">
@@ -61,7 +60,7 @@
       </div>
     </section>
 
-    <!-- Фото и видео -->
+    <!-- Фото -->
     <section class="media-preview">
       <div class="media-preview__wrapper">
         <ul class="media-preview__list">
@@ -71,8 +70,10 @@
             <img src="https://via.placeholder.com/150x150" alt="Фотография дороги">
             <h3 class="media-preview__caption">Неродные просторы</h3>
             <p class="media-preview__author">Автор фото: Борис</p>
-            <button class="media-preview__item__button"></button>
-            <div class="media-preview__item__likes">1350</div>
+            <div class="media-preview__item__likes">
+              <button class="media-preview__item__button"></button>
+              <span class="media-preview__item__text">1350</span>
+            </div>
           </li>
 
           <!-- 2. Местная растительность -->
@@ -80,8 +81,10 @@
             <img src="https://via.placeholder.com/150x150" alt="Фотография местных растений">
             <h3 class="media-preview__caption">Местная растительность</h3>
             <p class="media-preview__author">Автор фото: Сергей</p>
-            <button class="media-preview__item__button"></button>
-            <div class="media-preview__item__likes">143</div>
+            <div class="media-preview__item__likes">
+              <button class="media-preview__item__button"></button>
+              <span class="media-preview__item__likes">143</span>
+            </div>
           </li>
 
           <!-- 3. Дорога на север -->
@@ -89,8 +92,10 @@
             <img src="https://via.placeholder.com/150x150" alt="Фотография дороги ведущей на север">
             <h3 class="media-preview__caption">Дорога на север</h3>
             <p class="media-preview__author">Автор фото: Петр</p>
-            <button class="media-preview__item__button"></button>
-            <div class="media-preview__item__likes">96</div>
+            <div class="media-preview__item__likes">
+              <button class="media-preview__item__button"></button>
+              <span class="media-preview__item__likes">96</span>
+            </div>
           </li>
 
           <!-- 4. Мост дьявола -->
@@ -98,19 +103,27 @@
             <img src="https://via.placeholder.com/150x150" alt="Фотография каньена Мост дьявола">
             <h3 class="media-preview__caption">Мост дьявола</h3>
             <p class="media-preview__author">Автор фото: Антон</p>
-            <button class="media-preview__item__button"></button>
-            <div class="media-preview__item__likes">254</div>
-          </li>
-
-          <!-- 5. Блок с Видео "Вы еще сомневаетесь " -->
-          <li class="media-preview__item">
-            <h2 class="media-preview__caption__video">Все еще сомневаетесь?</h2>
-            <p class="media-preview__subtitle__video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <video>
-              <source src="https://via.placeholder.com/150x150">
-            </video>
+            <div class="media-preview__item__likes">
+              <button class="media-preview__item__button"></button>
+              <span class="media-preview__item__likes">254</span>
+            </div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- 5. Блок с Видео "Вы еще сомневаетесь " -->
+    <section class="video-preview">
+      <div class="video-preview__wrapper">
+        <h2 class="video-preview__caption__video">Все еще сомневаетесь?</h2>
+        <p class="video-preview__subtitle__video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video>
+          <source src="https://via.placeholder.com/150x150">
+          <button class="video-preview__time__position"></button>
+          <button class="video-preview__play__first"></button>
+          <button class="video-preview__subtitles"></button>
+          <button class="video-preview__full__screen"></button>
+        </video>
       </div>
     </section>
   </main>
