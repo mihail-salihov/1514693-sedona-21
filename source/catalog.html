@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Формы</title>
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип города Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a>
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru">
+              html academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header-presentation">
+      <div class="header-presentation__poster">
+        <img src="https://via.placeholder.com/150x150" alt="Добро пожаловать в Седону">
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="presentation">
+      <div class="presentation__wrapper">
+        <header class="presentation__header">
+          <h2 class="headline">Фото и видео</h2>
+          <p class="presentation__introduction">
+            Не можете решиться на путешествие<br>
+            из-за курса? Фотографии помогут вам<br>
+            забыть о политике и экономике
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <!-- Фото -->
+    <section class="media-preview">
+      <div class="media-preview__wrapper">
+        <ul class="media-preview__list">
+
+          <!-- 1. Не родные просторы -->
+          <li class="media-preview__item">
+            <img src="https://via.placeholder.com/150x150" alt="Фотография дороги">
+            <h3 class="media-preview__caption">Неродные просторы</h3>
+            <p class="media-preview__author">Автор фото: Борис</p>
+            <div class="media-preview__item__likes">
+              <button class="media-preview__item__button"></button>
+              <span class="media-preview__item__text">1350</span>
+            </div>
+          </li>
+
+          <!-- 2. Местная растительность -->
+          <li class="media-preview__item">
+            <img src="https://via.placeholder.com/150x150" alt="Фотография местных растений">
+            <h3 class="media-preview__caption">Местная растительность</h3>
+            <p class="media-preview__author">Автор фото: Сергей</p>
+            <div class="media-preview__item__likes">
+              <button class="media-preview__item__button"></button>
+              <span class="media-preview__item__likes">143</span>
+            </div>
+          </li>
+
+          <!-- 3. Дорога на север -->
+          <li class="media-preview__item">
+            <img src="https://via.placeholder.com/150x150" alt="Фотография дороги ведущей на север">
+            <h3 class="media-preview__caption">Дорога на север</h3>
+            <p class="media-preview__author">Автор фото: Петр</p>
+            <div class="media-preview__item__likes">
+              <button class="media-preview__item__button"></button>
+              <span class="media-preview__item__likes">96</span>
+            </div>
+          </li>
+
+          <!-- 4. Мост дьявола -->
+          <li class="media-preview__item">
+            <img src="https://via.placeholder.com/150x150" alt="Фотография каньена Мост дьявола">
+            <h3 class="media-preview__caption">Мост дьявола</h3>
+            <p class="media-preview__author">Автор фото: Антон</p>
+            <div class="media-preview__item__likes">
+              <button class="media-preview__item__button"></button>
+              <span class="media-preview__item__likes">254</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Блок с Видео "Вы еще сомневаетесь " -->
+    <section class="video-preview">
+      <div class="video-preview__wrapper">
+        <h2 class="video-preview__caption__video">Все еще сомневаетесь?</h2>
+        <p class="video-preview__subtitle__video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video>
+          <source src="https://via.placeholder.com/150x150">
+          <button class="video-preview__time__position"></button>
+          <button class="video-preview__play__first"></button>
+          <button class="video-preview__subtitles"></button>
+          <button class="video-preview__full__screen"></button>
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__hashtag">
+        <a class="page-footer__hashtag__visit" href="#">#visitsedona</a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#">facebook</a></li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__link__logo" src="https://via.placeholder.com/150x150" alt="Ссылка логотип htmlacademy"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
