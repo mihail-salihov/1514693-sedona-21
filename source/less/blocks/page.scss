@@ -1,0 +1,271 @@
+/* Меню "Главная", "Фото и Видео" и "Форма отзыва" */
+.main-nav__list {
+  list-style-type: none;
+}
+
+.main-nav__item a {
+  color: @color-1;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+/* Седона - небольшой городок... */
+.headline {
+  color: @color-4;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/*Обводка*/
+.presentation {
+  outline-color: @color-5;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+/* Рассмотрим пять причин... */
+.presentation__introduction {
+  color: @color-4;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*Обводка*/
+.advantages {
+  outline-color: @color-5;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+/*Список приемуществ*/
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Настоящий городок*/
+/*Там есть мост дьявола*/
+/*Небольшая площадь*/
+/*Красивая дорога*/
+/*Мало туристов*/
+.advantages__title {
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/*№1 Седона не атракцион для туристов*/
+/*№2 По нему можно пройти!*/
+/*№3 Все интересные места находятся очень близко*/
+/*№4 Ехать в Седону из Лас-Вегаса совсем не скучно!*/
+/*№5 Большинство едет в Гранд Каньон*/
+.advantages__description,
+.advantages__title__numeral {
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*Настоящий городок*/
+/*Там есть мост дьявола*/
+.advantages__item__type-1,
+.advantages__title__type-1,
+.advantages__title__numerale__type-1,
+.advantages__description__type-1, {
+  color: @color-1;
+  background-color: @color-2;
+  padding: 0;
+}
+
+/*Не большая площадь*/
+/*Красивая дорога*/
+/*Мало туристов*/
+.advantages__item__type-2,
+.advantages__title__type-2,
+.advantages__title__numeral__type-2,
+.advantages__title__description__type-2, {
+  color: @color-4;
+  background-color: @color-11;
+  padding: 0;
+}
+
+/*ФОНОВЫЕ изображения*/
+/* Постер Седона */
+.header-presentation__poster {
+  width: 901px;
+  height: 389px;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+/*Текст над постером*/
+/*.header-presentation__slogan {
+  width: 282px;
+  height: 214px;
+  background-image: url("../img/text-index.svg");
+  background-repeat: no-repeat;
+}*/
+
+
+/* Фоновая изображение Административное здание под "Настоящий городок Седона" */
+.advantages__item__poster-1 {
+  width: 520px;
+  height: 260px;
+  background-image: url("../img/photo-city.jpg");
+  background-repeat: no-repeat;
+}
+
+/*Фоновое изображение Каньен*/
+.advantages__item__poster-2 {
+  width: 520px;
+  height: 260px;
+  background-image: url("../img/photo-bridge.jpg");
+  background-repeat: no-repeat;
+}
+
+
+
+/*БЛОК "Жилье, Сувениры, Еда"*/
+.advantages__picture {
+  list-style-type: none;
+}
+
+/*Фон "Жилье, Сувениры, Еда"*/
+.advantages__picture {
+  background-color: @color-1;
+}
+
+/*Жилье Сувениры Еда*/
+.advantages__picture__title {
+  color: @color-4;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages__picture__description {
+  color: @color-4;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*БЛОК Поиска гостиницы*/
+.search {
+  background-color: @color-1;
+  /*Обводка*/
+  outline-color: @color-5;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+/*Заинтересовались?*/
+.search__form__invitation {
+  color: @color-4;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+}
+
+/*Укажите предрпологаемые даты*/
+.search__form__offer {
+  color: @color-3;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*Кнопка "Найти гостиницу"*/
+.search__form__find__hotel {
+  color: @color-1;
+  background-color: @color-2;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search__form__find__hotel:hover {
+  background-color: @color-15;
+}
+
+.search__form__find__hotel:focus {
+  background-color: @color-16;
+  opacity: 0.3;
+}
+
+.search__form__find__hotel:disabled {
+  background-color:@color-17;
+}
+
+/*ПОДВАЛ*/
+.page-footer__wrapper {
+  background-color: @color-1;
+}
+
+/*Карта*/
+.search__image {
+  width: 320px;
+  height: 350px;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+}
+
+/*#VISITSEDONA*/
+.page-footer__hashtag__visit {
+  color: @color-4;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/*Social*/
+.social__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Twitter, Facebook, Youtube*/
+.social__item {
+background-color: @color-2;
+}
+
+/*Copyright*/
+.copyright__text {
+  color: @color-4;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
