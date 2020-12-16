@@ -1,0 +1,103 @@
+.advantages {
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+/*Список приемуществ*/
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Настоящий городок*/
+/*Там есть мост дьявола*/
+/*Небольшая площадь*/
+/*Красивая дорога*/
+/*Мало туристов*/
+.advantages__title {
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/*№1 Седона не атракцион для туристов*/
+/*№2 По нему можно пройти!*/
+/*№3 Все интересные места находятся очень близко*/
+/*№4 Ехать в Седону из Лас-Вегаса совсем не скучно!*/
+/*№5 Большинство едет в Гранд Каньон*/
+.advantages__description,
+.advantages__title__numeral {
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*Настоящий городок*/
+/*Там есть мост дьявола*/
+.advantages__item__type-1,
+.advantages__title__type-1,
+.advantages__title__numerale__type-1,
+.advantages__description__type-1, {
+  color: @base-white;
+  background-color: @blue-matt;
+  padding: 0;
+}
+
+/*Не большая площадь*/
+/*Красивая дорога*/
+/*Мало туристов*/
+.advantages__item__type-2,
+.advantages__title__type-2,
+.advantages__title__numeral__type-2,
+.advantages__title__description__type-2, {
+  color: @base-black;
+  background-color: @base-white;
+  padding: 0;
+}
+
+/* Фоновая изображение Административное здание под "Настоящий городок Седона" */
+.advantages__item__poster-1 {
+  width: 520px;
+  height: 260px;
+  background-image: url("../img/photo-city.jpg");
+  background-repeat: no-repeat;
+}
+
+/*Фоновое изображение Каньен*/
+.advantages__item__poster-2 {
+  width: 520px;
+  height: 260px;
+  background-image: url("../img/photo-bridge.jpg");
+  background-repeat: no-repeat;
+}
+
+/*"Жилье, Сувениры, Еда"*/
+.advantages__picture {
+  list-style-type: none;
+  background-color: @base-white;
+}
+
+.advantages__picture__title {
+  color: @base-black;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages__picture__description {
+  color: @base-black;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}

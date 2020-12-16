@@ -1,0 +1,61 @@
+/*БЛОК Поиска гостиницы*/
+.search {
+  background-color: @base-white;
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+/*Заинтересовались?*/
+.search__form__invitation {
+  color: @base-black;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+}
+
+/*Укажите предрпологаемые даты*/
+.search__form__offer {
+  color: @brown;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*Кнопка "Найти гостиницу"*/
+.search__form__find__hotel {
+  color: @base-white;
+  background-color: @blue-matt;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search__form__find__hotel:hover {
+  background-color: @blue-fountain;
+}
+
+.search__form__find__hotel:focus {
+  background-color: @blue-steel;
+  opacity: 0.3;
+}
+
+.search__form__find__hotel:disabled {
+  background-color: @gray;
+}
+
+/*Карта*/
+.search__image {
+  width: 320px;
+  height: 350px;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+}
