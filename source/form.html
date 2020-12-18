@@ -47,11 +47,11 @@
   </header>
 
   <main class="page-main">
-    <section class="presentation">
-      <div class="presentation__wrapper">
-        <header class="presentation__header">
+    <section class="presentation-form">
+      <div class="presentation-form__wrapper">
+        <header class="presentation-form__header">
           <h2 class="headline">Оставьте свой отзыв</h2>
-          <p class="presentation__introduction">
+          <p class="presentation-form__introduction-form">
             Помогите нашим отелям стать лучше!<br>
             Оставьте отзыв о них, а также о<br>
             посещенных вами<br>
@@ -68,16 +68,16 @@
           <fieldset>
             <!-- Фамилия Имя Отчество -->
             <h3 class="form-review__title">Представьтесь</h3>
-            <ul class="form-review__guest__name">
-              <li class="form-review__field__name  form-review__first__name">
+            <ul class="form-review__guest-name">
+              <li class="form-review__field-name  form-review__first-name">
                 <label class="form-review__label" for="guest-name">Имя*:</label>
                 <input type="text" id="guest-name" name="name-1" value="Петр" required>
               </li>
-              <li class="form-review__field__name form-review__last__name">
+              <li class="form-review__field-name form-review__last-name">
                 <label class="form-review__label" for="guest-last-name">Фамилия*:</label>
                 <input type="text" id="guest-last-name" name="name-2" value="Иванов" required>
               </li>
-              <li class="form-review__field__name form-review__patronymic__name">
+              <li class="form-review__field-name form-review__patronymic-name">
                 <label class="form-review__label" for="guest-patronymic">Отчество</label>
                 <input type="text" id="guest-patronymic" name="name-3" value="Александрович">
               </li>
@@ -85,11 +85,11 @@
             <!-- Телефон и Емейл -->
             <h3 class="form-review__title">Контактная информация</h3>
             <ul class="form-review__contacts">
-              <li class="form-review__field__contacts  form-review__guest__phone">
+              <li class="form-review__field-contacts  form-review__guest-phone">
                 <label class="form-review__label" for="user-phone">Контактный телефон*:</label>
                 <input type="tel" name="tel" id="user-phone" pattern="" value="Введите телефон" required>
               </li>
-              <li class="form-review__field__contacts  form-review__guest__mail">
+              <li class="form-review__field-contacts  form-review__guest-mail">
                 <label class="form-review__label" for="user-mail">Электронная почта*:</label>
                 <input type="email" name="e-mail" id="user-mail" value="Введите e-mail" required>
               </li>
@@ -97,19 +97,23 @@
             <!-- Радиокнопка -->
             <h3 class="form-review__title">Ваше общее впечатление</h3>
             <ul class="form-review__opinion">
-              <li class="form-review__opinion__options">
+              <li class="form-review__opinion-options">
                 <input type="radio" id="user-opinion-1" name="review__opinion" value="1" checked>
                 <label class="form-review__label" for="user-opinion-1">Скорее положительное</label>
               </li>
-              <li class="form-review__opinion__options">
+              <li class="form-review__opinion-options">
                 <input type="radio" id="user-opinion-2" name="review__opinion" value="2">
                 <label class="form-review__label" for="user-opinion-2">Скорее отрицательное</label>
               </li>
-              <li class="form-review__opinion__options">
+              <li class="form-review__opinion-options">
                 <input type="radio" id="user-opinion-3" name="review__opinion" value="3">
                 <label class="form-review__label" for="user-opinion-3">Затрудняюсь ответить</label>
               </li>
             </ul>
+
+
+            /*Вставить БЛОК ПОсещенные достопримечательности??*/
+            /*Вставить Опищите свои эмоции??*/
 
             <!-- Кнопка Отправить отзыв -->
             <div class="form-review__button">
@@ -144,22 +148,22 @@
   <section class="popup">
     <!-- Popup -->
     <div class="popup__block">
-      <h3 class="popup__block__error">Что-то пошло не так!</h3>
+      <h3 class="popup__block-error">Что-то пошло не так!</h3>
       <p>Проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить</p>
       <!-- Кнопка Ok -->
       <div class="popup__button">
-        <button type="button" class="popup__button__agreement">Ок</button>
+        <button type="button" class="popup__button-agreement">Ок</button>
       </div>
     </div>
 
     <!-- Popup -->
     <div class="popup__block">
-      <h3 class="popup__block__success">Ваш отзыв отправлен</h3>
+      <h3 class="popup__block-success">Ваш отзыв отправлен</h3>
       <p>Спасибо за ваше участие, ваш<br>отзыв уже поступил к нам.<br>В ближайшее время мы<br>опубликуем его на сайте.</p>
     </div>
     <!-- Кнопка Ok -->
     <div class="popup__button">
-      <button type="button" class="popup__button__agreement">Ок</button>
+      <button type="button" class="popup__button-agreement">Ок</button>
     </div>
   </section>
 
