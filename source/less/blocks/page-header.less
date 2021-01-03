@@ -4,4 +4,25 @@
   outline-style: solid;
   outline-width: 3px;
   outline-offset: -3px;
+  padding: 0 16px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
