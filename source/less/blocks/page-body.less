@@ -9,3 +9,16 @@
   text-transform: uppercase;
   background-color: @gray-light;
 }
+
+.page-body__wrapper {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}

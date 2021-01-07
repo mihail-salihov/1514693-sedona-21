@@ -7,9 +7,14 @@ img {
   height: auto;
 }
 
-/*ul {
-  list-style: none;
-  padding-inline-start: 0;
-  margin: 0;
-  padding: 0;
-}*/
+.visually-hidden {
+  background-color: @blue-dim;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+}

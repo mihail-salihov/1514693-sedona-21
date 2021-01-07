@@ -4,14 +4,14 @@
   outline-width: 3px;
   outline-offset: -3px;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 /*Список приемуществ*/
 .advantages__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -52,27 +52,15 @@
   background-color: @blue-matt;
 }
 
-/*Не большая площадь*/
-/*Красивая дорога*/
-/*Мало туристов*/
-.advantages__item--type-2,
-.advantages__title--type-2,
-.advantages__title-description--type-2,
-.advantages__title-numeral--type-2 {
-  color: @base-black;
-  background-color: @base-white;
-}
-
 .advantages__block-first {
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 256px;
-    width: 100%;
     text-align: center;
   }
 }
 
+/*Блок Жилье - Сувениры - Еда*/
 .advantages__picture {
   list-style: none;
   outline-color: @red-orange;
@@ -82,12 +70,25 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-around;
+  }
+}
+
+.advantages__picture-icon {
+  list-style: none;
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 256px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-around;
+    flex-basis: 400px;
   }
 }
 
@@ -101,28 +102,43 @@
 
 .advantages__list-section {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
 }
 
-/* Небольшая площадь, Красивая дорога,  Еда */
+/* <БЛОК Небольшая площадь, Красивая дорога,  Еда */
 .advantages__list-container {
   list-style: none;
   outline-color: @red-orange;
   outline-style: solid;
   outline-width: 3px;
   outline-offset: -3px;
-  margin: 0;
-  padding: 0;
+  padding-left: 0;/* левый падинг 40px появлялся в отладчике */
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-around;
+  }
+}
+
+.advantages__block-third,
+.advantages__block-fourth,
+.advantages__block-fifth {
+  color: @base-black;
+  background-color: @base-white;
+  list-style: none;
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 256px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-around;
+    flex-basis: 400px;
   }
 }
 
