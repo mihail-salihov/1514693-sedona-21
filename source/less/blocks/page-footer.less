@@ -9,6 +9,20 @@
 
 .page-footer__wrapper {
   background-color: @base-white;
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*#VISITSEDONA*/

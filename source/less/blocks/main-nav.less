@@ -1,10 +1,25 @@
 .main-nav {
   background-color: @blue-dim;
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
 }
 
 /*Меню "Главная", "Фото и Видео" и "Форма отзыва"*/
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .main-nav__item a {
@@ -14,4 +29,10 @@
   text-transform: uppercase;
   font-size: 18px;
   line-height: 40px;
+}
+
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

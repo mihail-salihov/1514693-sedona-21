@@ -3,12 +3,15 @@
   outline-style: solid;
   outline-width: 3px;
   outline-offset: -3px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /*Список приемуществ*/
 .advantages__list {
-  list-style-type: none;
-  margin: 0;
+  list-style: none;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -41,47 +44,102 @@
 
 /*Настоящий городок*/
 /*Там есть мост дьявола*/
+.advantages__description--type-1,
 .advantages__item--type-1,
 .advantages__title--type-1,
-.advantages__title-numeral--type-1,
-.advantages__description--type-1, {
+.advantages__title-numeral--type-1 {
   color: @base-white;
   background-color: @blue-matt;
-  padding: 0;
 }
 
-/*Не большая площадь*/
-/*Красивая дорога*/
-/*Мало туристов*/
-.advantages__item--type-2,
-.advantages__title--type-2,
-.advantages__title-numeral--type-2,
-.advantages__title-description--type-2, {
+.advantages__block-first {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
+  }
+}
+
+/*Блок Жилье - Сувениры - Еда*/
+.advantages__picture {
+  list-style: none;
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.advantages__picture-icon {
+  list-style: none;
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 400px;
+  }
+}
+
+.advantages__block-second {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+  }
+}
+
+.advantages__list-section {
+  list-style: none;
+  margin: 0 auto;
+}
+
+/* <БЛОК Небольшая площадь, Красивая дорога,  Еда */
+.advantages__list-container {
+  list-style: none;
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+  padding-left: 0;/* левый падинг 40px появлялся в отладчике */
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.advantages__block-third,
+.advantages__block-fourth,
+.advantages__block-fifth {
   color: @base-black;
   background-color: @base-white;
-  padding: 0;
-}
+  list-style: none;
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+  margin: 0 auto;
 
-/* Фоновая изображение Административное здание под "Настоящий городок Седона" */
-.advantages__item-poster-1 {
-  width: 520px;
-  height: 260px;
-  background-image: url("../img/photo-city.jpg");
-  background-repeat: no-repeat;
-}
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 256px;
+  }
 
-/*Фоновое изображение Каньен*/
-.advantages__item-poster-2 {
-  width: 520px;
-  height: 260px;
-  background-image: url("../img/photo-bridge.jpg");
-  background-repeat: no-repeat;
-}
-
-/*"Жилье, Сувениры, Еда"*/
-.advantages__picture {
-  list-style-type: none;
-  background-color: @base-white;
+  @media (min-width: @desktop-width) {
+    flex-basis: 400px;
+  }
 }
 
 .advantages__picture-title {
