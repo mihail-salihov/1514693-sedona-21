@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Формы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,30 +15,30 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a>
-              Форма отзыва
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru">
-              html academy
-            </a>
-          </li>
-        </ul>
-      </div>
+      <!--<div class="main-nav__wrapper">-->
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a>
+            Форма отзыва
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru">
+            html academy
+          </a>
+        </li>
+      </ul>
+      <!--</div>-->
     </nav>
     <div class="header-presentation">
       <div class="header-presentation__poster">
@@ -66,81 +67,98 @@
       <div class="form-review__wrapper">
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
+            <div class="form-review__container">
             <!-- Фамилия Имя Отчество -->
-            <h3 class="form-review__title">Представьтесь:</h3>
-            <ul class="form-review__guest-name">
-              <li class="form-review__field-name  form-review__first-name">
-                <label class="form-review__label" for="guest-name">Имя*:</label>
-                <input class="form-review__input" type="text" id="guest-name" name="name-1" value="Петр" required>
-              </li>
-              <li class="form-review__field-name form-review__last-name">
-                <label class="form-review__label" for="guest-last-name">Фамилия*:</label>
-                <input class="form-review__input" type="text" id="guest-last-name" name="name-2" value="Иванов" required>
-              </li>
-              <li class="form-review__field-name form-review__patronymic-name">
-                <label class="form-review__label" for="guest-patronymic">Отчество</label>
-                <input class="form-review__input" type="text" id="guest-patronymic" name="name-3" value="Александрович">
-              </li>
-            </ul>
+            <div class="form-review__person">
+              <h3 class="form-review__title">Представьтесь:</h3>
+              <ul class="form-review__guest-name">
+                <li class="form-review__field-name  form-review__first-name">
+                  <label class="form-review__label" for="guest-name">Имя*:</label>
+                  <input class="form-review__input" type="text" id="guest-name" name="name-1" value="Петр" required>
+                </li>
+                <li class="form-review__field-name form-review__last-name">
+                  <label class="form-review__label" for="guest-last-name">Фамилия*:</label>
+                  <input class="form-review__input" type="text" id="guest-last-name" name="name-2" value="Иванов" required>
+                </li>
+                <li class="form-review__field-name form-review__patronymic-name">
+                  <label class="form-review__label" for="guest-patronymic">Отчество</label>
+                  <input class="form-review__input" type="text" id="guest-patronymic" name="name-3" value="Александрович">
+                </li>
+              </ul>
+            </div>
             <!-- Телефон и Емейл -->
-            <h3 class="form-review__title">Контактная информация:</h3>
-            <ul class="form-review__contacts">
-              <li class="form-review__field-contacts  form-review__guest-phone">
-                <label class="form-review__label" for="user-phone">Контактный телефон*:</label>
-                <input class="form-review__input" type="tel" name="tel" id="user-phone" pattern="" value="Введите телефон" required>
-              </li>
-              <li class="form-review__field-contacts  form-review__guest-mail">
-                <label class="form-review__label" for="user-mail">Электронная почта*:</label>
-                <input class="form-review__input" type="email" name="e-mail" id="user-mail" value="Введите e-mail" required>
-              </li>
-            </ul>
-            <!-- Радиокнопка -->
-            <h3 class="form-review__title">Ваше общее впечатление:</h3>
-            <ul class="form-review__opinion">
-              <li class="form-review__opinion-options">
-                <input type="radio" id="user-opinion-1" name="review__opinion" value="1" checked>
-                <label class="form-review__variant" for="user-opinion-1">Скорее положительное</label>
-              </li>
-              <li class="form-review__opinion-options">
-                <input type="radio" id="user-opinion-2" name="review__opinion" value="2">
-                <label class="form-review__variant" for="user-opinion-2">Скорее отрицательное</label>
-              </li>
-              <li class="form-review__opinion-options">
-                <input type="radio" id="user-opinion-3" name="review__opinion" value="3">
-                <label class="form-review__variant" for="user-opinion-3">Затрудняюсь ответить</label>
-              </li>
-            </ul>
+            <div class="form-review__person-contact">
+              <h3 class="form-review__title">Контактная информация:</h3>
+              <ul class="form-review__contacts">
+                <li class="form-review__field-contacts  form-review__guest-phone">
+                  <label class="form-review__label" for="user-phone">Контактный телефон*:</label>
+                  <input class="form-review__input" type="tel" name="tel" id="user-phone" pattern="" value="Введите телефон" required>
+                </li>
+                <li class="form-review__field-contacts  form-review__guest-mail">
+                  <label class="form-review__label" for="user-mail">Электронная почта*:</label>
+                  <input class="form-review__input" type="email" name="e-mail" id="user-mail" value="Введите e-mail" required>
+                </li>
+              </ul>
+            </div>
+            <!-- Радиокнопка ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ-->
+            <div class="form-review__impression">
+              <h3 class="form-review__title">Ваше общее впечатление:</h3>
+              <ul class="form-review__opinion">
+                <li class="form-review__opinion-options">
+                  <input type="radio" id="user-opinion-1" name="review__opinion" value="1" checked>
+                  <label class="form-review__variant" for="user-opinion-1">Скорее положительное</label>
+                </li>
+                <li class="form-review__opinion-options">
+                  <input type="radio" id="user-opinion-2" name="review__opinion" value="2">
+                  <label class="form-review__variant" for="user-opinion-2">Скорее отрицательное</label>
+                </li>
+                <li class="form-review__opinion-options">
+                  <input type="radio" id="user-opinion-3" name="review__opinion" value="3">
+                  <label class="form-review__variant" for="user-opinion-3">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </div>
+          </div>
             <!--Посещенные достопримечательности-->
-            <h3 class="form-review__title">Посещенные достопримечательности:</h3>
-            <ul class="form-review__visited">
-              <li class="form-review__visited-options">
-                <input type="checkbox" id="user-visited-1" checked>
-                <label class="form-review__variant" for="user-visited-1">Мост Дьявола</label>
-              </li>
-              <li class="form-review__visited-options">
-                <input type="checkbox" id="user-visited-2" checked>
-                <label class="form-review__variant" for="user-visited-2">Гора-Колокол</label>
-              </li>
-              <li class="form-review__visited-options">
-                <input type="checkbox" id="user-visited-3" checked>
-                <label class="form-review__variant" for="user-visited-3">Слайд-парк</label>
-              </li>
-              <li class="form-review__visited-options">
-                <input type="checkbox" id="user-visited-4">
-                <label class="form-review__variant" for="user-visited-4">Красные скалы</label>
-              </li>
-            </ul>
+            <div class="form-review__place">
+              <h3 class="form-review__title">Посещенные достопримечательности:</h3>
+              <ul class="form-review__visited">
+                <li class="form-review__visited-options">
+                  <input type="checkbox" id="user-visited-1" checked>
+                  <label class="form-review__variant" for="user-visited-1">Мост Дьявола</label>
+                </li>
+                <li class="form-review__visited-options">
+                  <input type="checkbox" id="user-visited-2" checked>
+                  <label class="form-review__variant" for="user-visited-2">Гора-Колокол</label>
+                </li>
+                <li class="form-review__visited-options">
+                  <input type="checkbox" id="user-visited-3" checked>
+                  <label class="form-review__variant" for="user-visited-3">Слайд-парк</label>
+                </li>
+                <li class="form-review__visited-options">
+                  <input type="checkbox" id="user-visited-4">
+                  <label class="form-review__variant" for="user-visited-4">Красные скалы</label>
+                </li>
+              </ul>
+            </div>
             <!--Опишите свои эмоции-->
-            <div class="form-review__emotion">
-              <h3 class="form-review__title">Опишите свои эмоции:</h3>
-              <div class="form-review__emotion-wrapper">
-                <textarea class="form-review__guest-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+            <div class="form-review__person-emotion">
+              <div class="form-review__emotion">
+                <h3 class="form-review__title">Опишите свои эмоции:</h3>
+                <div class="form-review__emotion-wrapper">
+                  <textarea class="form-review__guest-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+                </div>
               </div>
             </div>
             <!-- Кнопка Отправить отзыв -->
+          <div class="form-review__button-content">
             <div class="form-review__button-wrapper">
               <button class="form-review__button" type="submit" id="button-submit">Отправить отзыв</button>
             </div>
+            <div class="form-review__note">
+              <p class="form-review__note-hidden">*-обязательные поля</p>
+            </div>
+          </div>
           </fieldset>
         </form>
       </div>

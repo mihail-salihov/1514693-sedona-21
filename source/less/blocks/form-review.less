@@ -28,7 +28,7 @@
   padding: 0;
 }
 
-/*Имя Фамилия Отчество, Контактный тел.: Элюпочта:*/
+/*Имя Фамилия Отчество, Контактный тел.: Эл.почта:*/
 .form-review__label {
   color: @brown;
   font-style: normal;
@@ -75,11 +75,11 @@
 }
 
 /*Посещенные достопримечательности*/
-.form-review__visited {
+/*.form-review__visited {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
+}*/
 
 /*Опишите подробно все свои эмоции*/
 .form-review__emotion {
@@ -114,4 +114,140 @@
   border: none;
   width: 280px;
   height: 58px;
+}
+
+/*Блоки Формы*/
+/*ПРЕДСТАВЬТЕСЬ - 1*/
+.form-review__person {
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    flex-basis: 50%;
+  }
+}
+
+/*КОНТАКТНАЯ ИНФОРМАЦИЯ - 2*/
+.form-review__person-contact {
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    flex-basis: 100%;
+  }
+}
+
+/*ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ - 3*/
+.form-review__impression {
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    order: -2;
+    flex-basis: 50%;
+  }
+}
+
+/*ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ - 4*/
+.form-review__place {
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+/*ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ - 4 ФЛЕКС КОНТЕЙНЕР*/
+.form-review__visited {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form-review__visited-options {
+  @media (min-width: @tablet-width) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 25%;
+    flex-wrap: nowrap;
+  }
+}
+/*ОПИШИТЕ СВОИ ЭМОЦИИ - 5*/
+.form-review__person-emotion {
+  outline-color: @red-orange;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+/*Блок с кнопкой ОТПРАВИТЬ ОТЗЫВ и Обязательные поля*/
+.form-review__button-content {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+/*Блок *-ОБЯЗАТЕЛЬНЫЕ ПОЛЯ*/
+.form-review__note {
+  outline-color: @blue;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    flex-basis: 50%;
+    margin-left: auto;
+  }
+}
+
+/*прим. ОБЯЗАТЕЛЬНЫЕ ПОЛЯ*/
+.form-review__note-hidden {
+  color: @brown;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: right;
+}
+
+/*Кнопка*/
+.form-review__button-wrapper {
+  outline-color: @base-black;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+    flex-basis: 50%;
+  }
+}
+
+/*БЛОК из трех Блоков Форм "Представьтесь", "Контактная инф.", "Ваще ощее впечатление"*/
+.form-review__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

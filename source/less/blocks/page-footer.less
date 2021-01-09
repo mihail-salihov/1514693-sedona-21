@@ -15,13 +15,59 @@
   outline-offset: -3px;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+/*Блок Social*/
+.social__list {
+  outline-color: @blue;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+  display: flex;
+}
+
+/*Элементы в Блоке Social*/
+.social__item {
+  margin: auto;
+}
+
+/*Блок #VISITSEDONA*/
+.page-footer__hashtag {
+  outline-color: @blue;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 136px;
+  }
+}
+
+/*Social*/
+.page-footer__social {
+  outline-color: @blue;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 151px;
+  }
+}
+
+/*Copyright*/
+.page-footer__copyright {
+  outline-color: @blue;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 128px;
   }
 }
 
