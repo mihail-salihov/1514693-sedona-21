@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Формы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -66,50 +67,66 @@
         <ul class="media-preview__list">
 
           <!-- 1. Не родные просторы -->
-          <li class="media-preview__item">
+          <li class="media-preview__item-first">
             <div class="media-preview__poster-1"></div>
             <!--<img src="https://via.placeholder.com/150x150" alt="Фотография дороги">-->
-            <h3 class="media-preview__caption">Неродные просторы</h3>
-            <p class="media-preview__author">Автор фото: Борис</p>
-            <div class="media-preview__item-likes">
-              <button class="media-preview__item-button"></button>
-              <span class="media-preview__item-text">1350</span>
+            <div class="media-preview__subsection">
+              <div class="media-preview__caption-author">
+                <h3 class="media-preview__caption">Неродные просторы</h3>
+                <p class="media-preview__author">Автор фото: Борис</p>
+              </div>
+              <div class="media-preview__item-likes">
+                <button class="media-preview__item-button"></button>
+                <span class="media-preview__item-text">1350</span>
+              </div>
             </div>
           </li>
 
           <!-- 2. Местная растительность -->
-          <li class="media-preview__item">
+          <li class="media-preview__item-second">
             <div class="media-preview__poster-2"></div>
             <!--<img src="https://via.placeholder.com/150x150" alt="Фотография местных растений">-->
-            <h3 class="media-preview__caption">Местная растительность</h3>
-            <p class="media-preview__author">Автор фото: Сергей</p>
-            <div class="media-preview__item-likes">
-              <button class="media-preview__item-button"></button>
-              <span class="media-preview__item-text">143</span>
+            <div class="media-preview__subsection">
+              <div class="media-preview__caption-author">
+                <h3 class="media-preview__caption">Местная растительность</h3>
+                <p class="media-preview__author">Автор фото: Сергей</p>
+              </div>
+              <div class="media-preview__item-likes">
+                <button class="media-preview__item-button"></button>
+                <span class="media-preview__item-text">143</span>
+              </div>
             </div>
           </li>
 
           <!-- 3. Дорога на север -->
-          <li class="media-preview__item">
+          <li class="media-preview__item-third">
             <div class="media-preview__poster-3"></div>
             <!--<img src="https://via.placeholder.com/150x150" alt="Фотография дороги ведущей на север">-->
-            <h3 class="media-preview__caption">Дорога на север</h3>
-            <p class="media-preview__author">Автор фото: Петр</p>
-            <div class="media-preview__item-likes">
-              <button class="media-preview__item-button"></button>
-              <span class="media-preview__item-text">96</span>
+            <div class="media-preview__subsection">
+              <div class="media-preview__caption-author">
+                <h3 class="media-preview__caption">Дорога на север</h3>
+                <p class="media-preview__author">Автор фото: Петр</p>
+              </div>
+              <div class="media-preview__item-likes">
+                <button class="media-preview__item-button"></button>
+                <span class="media-preview__item-text">96</span>
+              </div>
             </div>
           </li>
 
           <!-- 4. Мост дьявола -->
-          <li class="media-preview__item">
+          <li class="media-preview__item-fourth">
             <div class="media-preview__poster-4"></div>
             <!--<img src="https://via.placeholder.com/150x150" alt="Фотография каньена Мост дьявола">-->
-            <h3 class="media-preview__caption">Мост дьявола</h3>
-            <p class="media-preview__author">Автор фото: Антон</p>
-            <div class="media-preview__item-likes">
-              <button class="media-preview__item-button"></button>
-              <span class="media-preview__item-text">254</span>
+            <div class="media-preview__subsection">
+              <div class="media-preview__caption-author">
+                <h3 class="media-preview__caption">Мост дьявола</h3>
+                <p class="media-preview__author">Автор фото: Антон</p>
+              </div>
+              <div class="media-preview__item-likes">
+                <button class="media-preview__item-button"></button>
+                <span class="media-preview__item-text">254</span>
+              </div>
             </div>
           </li>
         </ul>
@@ -119,16 +136,20 @@
     <!-- 5. Блок с Видео "Вы еще сомневаетесь " -->
     <section class="video-preview">
       <div class="video-preview__wrapper">
-        <h2 class="video-preview__caption-video">Все еще сомневаетесь?</h2>
-        <p class="video-preview__subtitle-video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video-preview__caption">
+          <h2 class="video-preview__caption-video">Все еще сомневаетесь?</h2>
+          <p class="video-preview__subtitle-video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
         <div class="video-preview__background"></div>
-        <video>
-          <source src="https://via.placeholder.com/150x150">
-          <button class="video-preview__time-position"></button>
-          <button class="video-preview__play-first"></button>
-          <button class="video-preview__subtitles"></button>
-          <button class="video-preview__full-screen"></button>
-        </video>
+        <div class="video-preview__control">
+          <video>
+            <source src="https://via.placeholder.com/150x150">
+            <button class="video-preview__time-position"></button>
+            <button class="video-preview__play-first"></button>
+            <button class="video-preview__subtitles"></button>
+            <button class="video-preview__full-screen"></button>
+          </video>
+        </div>
       </div>
     </section>
   </main>

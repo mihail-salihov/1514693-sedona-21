@@ -5,3 +5,18 @@
   outline-width: 3px;
   outline-offset: -3px;
 }
+
+.presentation-form__header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+
+  @media (min-width: @mobile-width-only) {
+    height: 257px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 279px;
+  }
+}
